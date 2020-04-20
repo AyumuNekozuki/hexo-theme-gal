@@ -16,7 +16,7 @@ body {
   font-size: $body-font-sz;
   color: $body-color;
   // background-color: #000;
-  cursor: url(../imgs/mouse1.cur), url(../imgs/mouse1.cur), auto;
+  cursor: auto;
   word-wrap: break-word;
   // TODO 待修改body样式(目前要测其他组件样式)
   background:  0% 0% / cover no-repeat fixed rgb(0, 0, 0);
@@ -42,7 +42,7 @@ body {
 }
 
 a {
-  cursor: url(../imgs/mouse2.cur), url(../imgs/mouse2.cur), auto;
+  cursor: pointer;
   color: $link-color;
   text-decoration: none;
   &:hover {
@@ -325,7 +325,7 @@ button.close {
   border-radius: 50%;
   border: 2px solid #fff;
   border-image: initial;
-  cursor: url(../imgs/mouse2.cur), url(../imgs/mouse2.cur), auto;
+  cursor: auto;
   &:hover {
     color: $goTop-hover-color;
     border-color: $goTop-hover-bd-color;

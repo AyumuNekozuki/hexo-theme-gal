@@ -220,13 +220,13 @@
 #smilelink {
   display: inline-block;
   margin-bottom: 10px;
-  cursor: url(../imgs/mouse1.cur), url(../imgs/mouse1.cur), auto;
+  cursor: auto;
 }
 
 #smilelink img {
   opacity: 0.7;
   @include gal-transform(scale(1) rotate(0deg));
-  cursor: url(../imgs/mouse2.cur), url(../imgs/mouse2.cur), auto;
+  cursor: auto;
   @include gal-transition($property: -webkit-transform, $duration: 0.2s, $timing-function: ease-out);
   &:hover {
     opacity: 1;

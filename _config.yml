@@ -4,7 +4,7 @@ logo_image:  # 使用路径, 填写文件名即可(比如, logo_image: logo.png 
 navbar_text: # 如果没有Logo, 则设置为false, 并且设置navbar_text(否则默认为站点标题, 最好进行设置)
 
 # 必填, 设定小型设备展示背景图, 指向source/imgs, 比如xs_bg_image: bg.png -> source/imgs/bg.png
-xs_bg_image: xsbg.gif
+xs_bg_image: bg.jpg
 
 # 必填, 个人头像, 如果是路径, 则指向source/imgs
 # 也可以填http:// OR https:// url地址
@@ -12,34 +12,26 @@ author_image: avatar.jpg
 
 # 程序员模式, 适合于用该程序的爱好写技术文章的人员, 默认不开启
 # 选择开启后将会改变article-excerpt, article-content等的显示
-programmer_mode: false
+programmer_mode: true
 
 # 导航菜单
 menu:
   # index
-  - title: HOME
+  - title: 　HOME
     # 参照font-awesome官网的icon, 取后面一段(比如用fa-star这个图标, 那么这里的icon就填star)
     icon: home
     url: /
   # archives
-  - title: アーカイブ
+  - title: 　アーカイブ
     icon: archive
     url: archives
-  # categories
-  - title: カテゴリ
-    icon: list
-    url: categories
-    dropdown: 3 #dropdown为下拉菜单出现的项目最大数目(只限于tags和categorys)
-    # 如果不想显示下拉菜单, 则不要填写, 即dropdown:
-    # 具体效果可以看https://myau.moe
   # tags
-  - title: タグ
+  - title: 　タグ
     icon: tags
     url: tags
     dropdown: 3
   # about, 这个实际上是自定义page, 后面的自定义page参照about样式
   - title: 猫月あゆむPORTAL(β)
-    icon: user
     url: https://nekozuki.me
 
 # 每篇文章的preview默认图片
@@ -48,10 +40,10 @@ menu:
 # 如果使用文件名则对应目录: source/imgs/preview, 比如 preview1.jpg -> source/imgs/preview/preview1.jpg
 # 如果用url则填写完整的url地址即可
 default_preview:
-  - preview1.jpg
-  - preview2.jpg
-  - preview3.jpg
-  - preview4.jpg
+  - nekozuki01.jpg
+  - nekozuki02.jpg
+  - nekozuki03.jpg
+  - nekozuki04.jpg
 
 # 侧边栏
 sidebar:

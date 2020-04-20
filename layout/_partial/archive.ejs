@@ -30,7 +30,7 @@
         %>
         <% site.posts.sort('date', -1).forEach(function (post, index) {
             if(index === 0) { %>
-            <h1 style="font-size: 24px; margin-top: 40px;"><%= post.date.toDate().getFullYear() %>年</h1>
+            <h1 style="font-size: 24px; margin-top: 40px;"><%= post.date.toDate().getFullYear() %></h1>
             <% }
         }) %>
         <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
@@ -39,7 +39,7 @@
              <% if (lastYear !== +year) {
                  if(lastYear !== null) { %>
                         </div>
-                    <h1 style="font-size: 24px; margin-top: 40px;"><%= year %>年</h1>
+                    <h1 style="font-size: 24px; margin-top: 40px;"><%= year %></h1>
                     <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
                  <% } lastYear = year %>
              <% } %>
