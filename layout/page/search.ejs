@@ -30,7 +30,7 @@
     var useLeancloud = '<%= theme.leancloud.appid && theme.leancloud.appkey %>'
     var useComment = ('<%= theme.use_comment %>' === 'true')
     $.getJSON('<%- url_for('content.json') %>', function (json) {
-      $('#search-breadcrumb').append(`搜索'${s}'的结果`)
+      $('#search-breadcrumb').append(`検索'${s}'結果`)
       var result = getArticles(s, 'posts', json).concat(getArticles(s, 'pages', json))
       if (result.length === 0 || result.length <= (p - 1) * pageSize) {
       	// TODO 显示404页面

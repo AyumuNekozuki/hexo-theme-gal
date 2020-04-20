@@ -3,13 +3,13 @@
         <i class="fa fa-home"></i>
         <a href="<%- config.url %>"><%= config.title %></a>
         >
-        <span>目录</span>
+        <span>カテゴリ</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="<%- url_for('categories') %>">目录集合</a>
+                <a href="<%- url_for('categories') %>">カテゴリ一覧</a>
             </h1>
         </div>
     </div>
@@ -18,7 +18,7 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="<%- url_for('categories') %>">目录集合</a>
+                    <a href="<%- url_for('categories') %>">カテゴリ一覧</a>
                 </h4>
             </div>
         </center>
@@ -30,7 +30,7 @@
             <br>
             <% }) %>
             <% if (site.categories.length === 0) { %>
-            暂无目录
+            カテゴリがありません
             <% } %>
         </div>
     </div>

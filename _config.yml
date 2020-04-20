@@ -17,30 +17,30 @@ programmer_mode: false
 # 导航菜单
 menu:
   # index
-  - title: 首页
+  - title: HOME
     # 参照font-awesome官网的icon, 取后面一段(比如用fa-star这个图标, 那么这里的icon就填star)
     icon: home
     url: /
   # archives
-  - title: 归档
+  - title: アーカイブ
     icon: archive
     url: archives
   # categories
-  - title: 分类
+  - title: カテゴリ
     icon: list
     url: categories
     dropdown: 3 #dropdown为下拉菜单出现的项目最大数目(只限于tags和categorys)
     # 如果不想显示下拉菜单, 则不要填写, 即dropdown:
     # 具体效果可以看https://myau.moe
   # tags
-  - title: 标签
+  - title: タグ
     icon: tags
     url: tags
     dropdown: 3
   # about, 这个实际上是自定义page, 后面的自定义page参照about样式
-  - title: 关于我
+  - title: 猫月あゆむPORTAL(β)
     icon: user
-    url: about
+    url: https://nekozuki.me
 
 # 每篇文章的preview默认图片
 # 必填项(除非你每篇文章的front-matter都设置了preview属性)
@@ -55,31 +55,27 @@ default_preview:
 
 # 侧边栏
 sidebar:
-  recent_comments: true   # 最新评论, 默认关闭, 可能需要自己进行模板配置
+  recent_comments: false   # 最新评论, 默认关闭, 可能需要自己进行模板配置
   hot_posts: true         # 最热文章, 如果配置了下面的文章统计就可以使用该侧边栏, 否则设置为false
   recent_posts: true      # 最新文章, 默认开启
-  random_posts: true      # 随机文章, 默认开启
+  random_posts: false      # 随机文章, 默认开启
   tags: true              # 热门标签, 默认开启
   friend_links: true      # 友情链接, 默认开启
   links: true             # 个人链接, 默认开启
 
 # 友情链接配置, 要先开启上面的friend_links
 friend_links:
-  - name: KDays Forum
-    link: http://kdays.net/days/
-  - name: 绅士导航♂
-    link: http://www.gal123.com/
-  - name: 萌导航
-    link: http://www.moe123.com/
+  - name: Please wait...
+    link: http://blog.nekozuki.me/
 
 # 个人链接配置, 要先开启上面的links
 links:
   - name: Github
-    link: https://github.com/ZEROKISEKI/
-  - name: Coding
-    link: https://coding.net/u/SORA1
-  - name: 知乎
-    link: https://www.zhihu.com/people/aonosora/activities
+    link: https://github.com/AyumuNekozuki/
+  - name: Twitter
+    link: https://twitter.com/nekozuki_2525
+  - name: niconico
+    link: https://www.nicovideo.jp/user/45048152
 
 
 # 是否使用公告
@@ -162,3 +158,26 @@ node_sass:
   outputStyle: compressed
   precision: 5
   sourceComments: false
+
+#hexo g error kaihi
+jsonContent:
+  dateFormat: MM-DD
+  pages:
+    title: true
+    text: true
+    path: true
+    date: true
+    excerpt: true
+    preview: true
+  posts:
+    title: true
+    text: true
+    path: true
+    date: true
+    excerpt: true
+    tags: [{
+      name: tag.name,
+      slug: tag.slug,
+      permalink: tag.permalink
+    }]
+    preview: true
